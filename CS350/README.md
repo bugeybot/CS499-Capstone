@@ -1,0 +1,15 @@
+For this project, I selected two key artifacts that best represent the work I’ve done in this course: the Smart Thermostat and the SOS/OK Morse Code State Machine. Both of these projects demonstrate my ability to write interface software to control hardware components and analyze system architecture design choices.
+
+The Smart Thermostat project involved creating a prototype thermostat using the TI CC3220 LaunchPad. This system read room temperature using an I2C temperature sensor and allowed the user to adjust the set-point via buttons. The thermostat simulated controlling a heating element (represented by an LED) and sent data to a simulated server over UART. The project required balancing multiple tasks, such as reading temperature data, responding to button presses, and updating the heater status—all while ensuring that the system remained responsive.
+
+The SOS/OK Morse Code State Machine, on the other hand, was an exercise in implementing a state machine to blink LEDs in a defined Morse code pattern, switching between SOS and OK messages. This project emphasized how to manage state transitions and handle timing in an embedded system, using GPIO interrupts to toggle between the two Morse code messages when a button was pressed.
+
+In terms of what I did particularly well, I think my handling of real-time tasks in both projects stands out. In the thermostat, the task scheduler allowed me to handle button presses, temperature readings, and data transmissions efficiently, without any delays or conflicts. In the Morse code state machine, ensuring smooth transitions between states and handling button interrupts cleanly was essential, and I’m happy with how that turned out.
+
+That said, I believe I could improve on robustness in both projects. While they function well under normal conditions, there’s room to build out better error handling, particularly for sensor communication in the thermostat and state management in the Morse code project. Adding resilience for edge cases would take both projects to the next level.
+
+For tools and resources, I have relied heavily on datasheets and technical documentation, particularly for the I2C communication of the thermostat. Resources like this are now a key part of my support network and will continue to serve as reference points in future projects.
+
+The skills I’ve developed here, particularly in managing task scheduling and peripheral communication, will be highly transferable to other projects. Whether it’s handling I2C communication, UART, or implementing a state machine, the knowledge gained from these two projects provides a solid foundation for future coursework or even professional embedded systems development.
+
+To ensure both projects are maintainable and adaptable, I focused on clean, well-commented code. In both projects, I followed a modular design approach, ensuring that future expansions (like integrating Wi-Fi into the thermostat or adding new messages to the Morse code project) could be done with minimal changes to the existing structure.
