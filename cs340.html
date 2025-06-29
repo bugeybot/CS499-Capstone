@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Database Enhancement – Nathaniel Gratton</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 800px; margin: 2em auto; padding: 0 1em; background: #f9f9f9; }
+    h1, h2 { text-align: center; }
+    a { text-decoration: none; color: #0366d6; }
+    a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 4em; font-size: 0.9em; color: #777; }
+  </style>
+</head>
+<body>
+  <h1>Database Enhancement</h1>
+  <p>My database-focused artifact originates from CS 340, where I developed a dashboard using Dash and MongoDB to visualize animal shelter records. The original artifact allowed users to browse a database of adoptable animals and filter results based on various criteria, displaying them in a searchable table, interactive map, and pie chart.</p>
+  <p>For my enhancement, I focused on introducing secure user authentication and role-based access control. This significantly improves the professionalism and security of the application, aligning it with real-world production practices. I implemented a simple login system that assigns user roles—basic or admin—on authentication.</p>
+  <p>The dashboard now adapts its interface based on user permissions. Admin users are granted additional UI components that allow them to create, update, and delete animal records directly from the dashboard. This dynamic front-end rendering is driven by user session data and showcases my ability to link database behavior to user roles in a responsive design.</p>
+  <p>In the backend, I expanded the CRUD interface of the <code>AnimalShelter</code> class to validate user roles before allowing write operations. This includes verification for data integrity and exception handling for unauthorized attempts. By segregating database privileges, I reinforced the principle of least privilege in application design.</p>
+  <p>These enhancements demonstrate both technical knowledge and awareness of software security concepts. I used conditional rendering logic, Python decorators, and role-aware MongoDB queries to meet the course outcomes related to database design, secure development, and usability.</p>
+  <p>This project is now not only informative and interactive—it is secure and scalable. It presents a realistic example of how a database-driven application can respond to diverse users while protecting sensitive operations.</p>
+  <p><a href="link-here-after-upload" target="_blank" rel="noopener noreferrer">View the full CS340 source code on GitHub</a></p>
+  <footer>
+    <p><a href="index.html">&larr; Back to Home</a></p>
+    <p>&copy; 2025 Nathaniel Gratton. All rights reserved.</p>
+  </footer>
+</body>
+</html>

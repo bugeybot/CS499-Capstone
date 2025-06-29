@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Software Design and Engineering Enhancement – Nathaniel Gratton</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 800px; margin: 2em auto; padding: 0 1em; background: #f9f9f9; }
+    h1, h2 { text-align: center; }
+    a { text-decoration: none; color: #0366d6; }
+    a:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 4em; font-size: 0.9em; color: #777; }
+  </style>
+</head>
+<body>
+  <h1>Software Design and Engineering Enhancement</h1>
+  <p>For the software engineering category, I selected my embedded systems project from CS 350. Originally, this program flashed an LED in a fixed SOS or OK pattern using a state machine in C. While functional, the original design was rigid and lacked user flexibility, offering no means to personalize behavior.</p>
+  <p>To showcase deeper understanding of embedded systems and user-centered design, I introduced several enhancements. First, I added support for custom Morse code messages. Users can now input any string of text to be encoded and flashed as Morse code. This required the creation of an ASCII-to-Morse encoding system, a more robust state machine, and memory-safe handling of user input on constrained hardware.</p>
+  <p>Second, I developed a console simulation mode to support testing without requiring deployment to hardware. This mode prints LED states and message patterns in real time to the console, reflecting a strong grasp of embedded debugging strategies.</p>
+  <p>Finally, I implemented adjustable timing controls for dot and dash lengths, giving users a way to modify message speed on the fly. This required parameterization of timer intervals and careful interrupt management to ensure consistency between ticks.</p>
+  <p>These enhancements demonstrate mastery of real-time systems, embedded interface development, and user-configurable design. They fulfill course outcomes around technical communication, algorithmic design, and value-driven software engineering. Most importantly, they turn a basic program into a flexible and extensible tool that feels like a real product.</p>
+  <p><a href="link-here-after-upload" target="_blank" rel="noopener noreferrer">View the full IT145 source code on GitHub</a></p>
+  <footer>
+    <p><a href="index.html">&larr; Back to Home</a></p>
+    <p>&copy; 2025 Nathaniel Gratton. All rights reserved.</p>
+  </footer>
+</body>
+</html>
