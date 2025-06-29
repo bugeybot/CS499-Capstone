@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Software Design and Engineering Enhancement – Nathaniel Gratton</title>
+  <title>Algorithms and Data Structures – Nathaniel Gratton</title>
   <style>
     body { font-family: Arial, sans-serif; max-width: 800px; margin: 2em auto; padding: 0 1em; background: #f9f9f9; }
     h1, h2 { text-align: center; }
@@ -13,12 +13,13 @@
   </style>
 </head>
 <body>
-  <h1>Software Design and Engineering Enhancement</h1>
-  <p>For the software engineering category, I selected my embedded systems project from CS 350. Originally, this program flashed an LED in a fixed SOS or OK pattern using a state machine in C. While functional, the original design was rigid and lacked user flexibility, offering no means to personalize behavior.</p>
-  <p>To showcase deeper understanding of embedded systems and user-centered design, I introduced several enhancements. First, I added support for custom Morse code messages. Users can now input any string of text to be encoded and flashed as Morse code. This required the creation of an ASCII-to-Morse encoding system, a more robust state machine, and memory-safe handling of user input on constrained hardware.</p>
-  <p>Second, I developed a console simulation mode to support testing without requiring deployment to hardware. This mode prints LED states and message patterns in real time to the console, reflecting a strong grasp of embedded debugging strategies.</p>
-  <p>Finally, I implemented adjustable timing controls for dot and dash lengths, giving users a way to modify message speed on the fly. This required parameterization of timer intervals and careful interrupt management to ensure consistency between ticks.</p>
-  <p>These enhancements demonstrate mastery of real-time systems, embedded interface development, and user-configurable design. They fulfill course outcomes around technical communication, algorithmic design, and value-driven software engineering. Most importantly, they turn a basic program into a flexible and extensible tool that feels like a real product.</p>
+  <h1>Algorithms and Data Structures Enhancement</h1>
+  <p>My artifact for the algorithms and data structures category is a Python-based text adventure game originally developed in IT145. The initial version presented a linear gameplay structure, with basic item collection and a fixed win condition. To better demonstrate my growth in algorithmic design and logical complexity, I significantly expanded this project through puzzle-based gameplay and a dynamic save system.</p>
+  <p>The first enhancement was the addition of logical puzzles that gated item access. For example, a riddle posed by a statue must be answered to obtain armor, and a logic puzzle involving contradictory clues is required to retrieve a gemstone from one of three basement boxes. These puzzles are solved using truth-value tracking and conditional branching, adding cognitive depth and requiring players to engage in reasoning rather than simple exploration.</p>
+  <p>Another major enhancement involved expanding the command parser. The original parser recognized only basic "go" and "take" commands. I broadened the input system to understand synonyms, such as "look", "interact", and "use", while maintaining clear syntax handling. This required the use of dictionaries and parsing logic to map varied commands into core actions, reflecting mastery of control flow and data mapping techniques.</p>
+  <p>To increase replayability, I randomized critical game variables such as safe codes and puzzle solutions. The birthday clue leading to a code-based safe and the gem location in the logic puzzle are now procedurally generated at runtime and encoded in the save system.</p>
+  <p>Finally, I implemented JSON-based save/load functionality, giving players the ability to preserve progress. The save file includes inventory state, room-specific changes, and dynamic values, demonstrating use of serialization and deserialization of complex Python objects.</p>
+  <p>This enhanced artifact showcases recursive logic, dictionary-driven command interpretation, procedural content generation, and data persistence. These are key algorithmic and data structure skills that demonstrate competency in designing systems that go beyond surface-level programming.</p>
   <p><a href="https://github.com/bugeybot/CS499-Capstone/tree/main/IT145" target="_blank" rel="noopener noreferrer">View the full IT145 source code on GitHub</a></p>
   <footer>
     <p><a href="index.html">&larr; Back to Home</a></p>
